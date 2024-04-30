@@ -38,7 +38,7 @@
         <div class="form-content">
           <div class="login-form">
             <div class="title">Login</div>
-          <form method="post" action="../userVerify">
+          <form method="post" action="LoginServlet">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -47,18 +47,31 @@
               <div class="input-box">
                 <i class="fas fa-lock"></i>
                 <input type="password" name="password" placeholder="Enter your password" required>
+              </div>            
+              
+          
+              <div >
+                  <div  style="display: inline-block; margin-right: 10px;">
+                            <input type="checkbox" class="form-check-input" id="formCheck" style="margin-right: 5px;">
+                            <label for="formCheck" class="form-check-label text-secondary" style="text-decoration: none; color: #6c757d; font-size: 16px;"><small>Remember Me</small></label>
+                        </div>
+
+                        <div class="forgot">
+                            <small><a href="forgetPsw.jsp" style="text-decoration: none; color: #6c757f; font-size: 16px;"><small>Forgot Password?</small></a></small>
+                        </div>
+             </div>            
+                 <div class="button input-box">
+                <input type="submit" value="login">
               </div>
-              <div class="text"><a href="#">Forgot password?</a></div>
-              <div class="button input-box">
-                <input type="submit" value="Sumbit">
-              </div>
+              
+              
               <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
             </div>
         </form>
       </div>
         <div class="signup-form">
           <div class="title">Signup</div>
-        <form method="post" action="../userVerify">
+        <form method="post" action="CustomerRegisterServlet">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
@@ -66,11 +79,15 @@
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name="password" placeholder="Enter your email" required>
+                <input type="text" name="email" placeholder="Enter your email" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" name="confirmpassword" placeholder="Enter your password" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+              </div>
+                <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="confirmpassword" placeholder="confirm password" required>
               </div>
               <div class="button input-box">
                 <input type="submit" value="Sumbit">
