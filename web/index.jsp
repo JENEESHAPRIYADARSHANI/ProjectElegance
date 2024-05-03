@@ -71,6 +71,9 @@
                             <li class="scroll-to-section"><a href="#">
                                 <i class="fa-solid fa-user"></i> &nbsp; LOGIN
                             </a></li>
+                            <li class="scroll-to-section"><a href="#">
+                                <i class="fa-solid fa-gear"></i> &nbsp; ADMIN
+                            </a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
